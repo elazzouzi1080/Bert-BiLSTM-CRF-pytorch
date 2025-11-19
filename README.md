@@ -24,7 +24,7 @@ python crf_predict.py
 
 
 ## 🏗️ Architecture du framework
-
+```
 TracIA_Usecases/
 ├── 📄 heart_failure_clinical_records_dataset_with_row_id.csv
 │ └── Dataset + identifiant unique (row_id)
@@ -40,3 +40,4 @@ TracIA_Usecases/
 │
 └── 📘 02_run_binary_classification_pipeline.ipynb
 └── Exécution interactive et reproductible
+```
