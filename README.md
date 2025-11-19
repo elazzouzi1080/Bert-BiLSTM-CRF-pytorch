@@ -21,23 +21,3 @@ python main.py -- n_epochs 100 --finetuning --top_rnns
 ```
 python crf_predict.py
 ```
-
-
-## 🏗️ Architecture du framework
-```
-TracIA_Usecases/
-├── 📄 heart_failure_clinical_records_dataset_with_row_id.csv
-│ └── Dataset + identifiant unique (row_id)
-│
-├── ⚙️ manifest.json
-│ └── Configuration centralisée (splits k=5, métriques, random_state)
-│
-├── 📊 train_ids_fold*.csv & test_ids_fold*.csv
-│ └── Partitions fixes pour la validation croisée
-│
-├── 🐍 fixed_cv_binary_classification.py
-│ └── Pipeline complet : 9 modèles ML + métriques + visualisations
-│
-└── 📘 02_run_binary_classification_pipeline.ipynb
-└── Exécution interactive et reproductible
-```
